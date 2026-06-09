@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoe's Art Portfolio | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html">Zoe's Art Portfolio</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Studio Collection</p>
+            <h1>Zoe's Art Portfolio</h1>
+            <p class="hero-text">
+              A growing body of paintings, drawings, fashion studies, and
+              printmaking experiments shaped by texture, memory, and
+              storytelling.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#featured-work">Explore Featured Work</a>
+              <a class="button button-secondary" href="portfolio.html"
+                >View Full Portfolio</a
+              >
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="placeholder placeholder-tall">
+              <span>Featured Studio Image</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="intro-strip">
+          <p>
+            Scroll through a selection of Zoe's strongest pieces across each
+            genre. Every work is presented with a title, a short description,
+            and a path into the full portfolio.
+          </p>
+        </section>
+
+        <section id="featured-work" class="content-section">
+          <div class="section-heading">
+            <p class="eyebrow">Best of Each Genre</p>
+            <h2>Featured Work</h2>
+          </div>
+          <div id="home-featured-sections" class="genre-stack"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
