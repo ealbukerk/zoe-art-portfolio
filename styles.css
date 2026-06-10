@@ -1,13 +1,13 @@
 :root {
-  --bg: #d9e9fb;
-  --surface: rgba(236, 244, 255, 0.9);
-  --surface-strong: #f5f9ff;
+  --bg: #1560bd;
+  --surface: rgba(240, 247, 255, 0.92);
+  --surface-strong: #f7fbff;
   --ink: #162235;
-  --muted: #4e6482;
-  --accent: #2d5c93;
-  --accent-deep: #1d4370;
+  --muted: #47617f;
+  --accent: #0d4c9f;
+  --accent-deep: #08366f;
   --line: rgba(22, 34, 53, 0.12);
-  --shadow: 0 24px 60px rgba(36, 59, 95, 0.14);
+  --shadow: 0 24px 60px rgba(8, 33, 72, 0.22);
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
@@ -29,9 +29,9 @@ body {
   font-family: "Manrope", sans-serif;
   background-color: var(--bg);
   background-image:
-    radial-gradient(circle at 12% 18%, rgba(112, 164, 224, 0.42), transparent 24%),
-    radial-gradient(circle at 86% 10%, rgba(70, 119, 184, 0.24), transparent 22%),
-    linear-gradient(180deg, #d9e9fb 0%, #e8f2fe 44%, #d4e5f8 100%);
+    radial-gradient(circle at 12% 18%, rgba(117, 175, 243, 0.3), transparent 24%),
+    radial-gradient(circle at 86% 10%, rgba(6, 39, 86, 0.22), transparent 24%),
+    linear-gradient(180deg, #1560bd 0%, #1b67c3 42%, #0f58b2 100%);
 }
 
 body::before {
@@ -61,7 +61,7 @@ body::before {
   gap: 18px;
   padding: 18px 22px;
   margin-bottom: 20px;
-  background: rgba(245, 249, 255, 0.88);
+  background: rgba(247, 251, 255, 0.9);
   backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 999px;
@@ -183,12 +183,6 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
   font-size: 1.03rem;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
 .button {
   display: inline-flex;
   align-items: center;
@@ -206,7 +200,7 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
 
 .button-secondary {
   color: var(--ink);
-  background: rgba(244, 249, 255, 0.82);
+  background: rgba(245, 250, 255, 0.86);
   border-color: var(--line);
   box-shadow: none;
 }
@@ -317,14 +311,14 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
 .art-card {
   height: 100%;
   padding: 16px;
-  background: rgba(244, 249, 255, 0.74);
+  background: rgba(245, 250, 255, 0.78);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
 }
 
 .art-card:hover {
-  background: rgba(248, 252, 255, 0.94);
-  box-shadow: 0 16px 30px rgba(40, 68, 110, 0.12);
+  background: rgba(249, 252, 255, 0.96);
+  box-shadow: 0 16px 30px rgba(12, 45, 93, 0.18);
 }
 
 .art-card h4 {
@@ -348,7 +342,7 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
   padding: 7px 11px;
   font-size: 0.82rem;
   font-weight: 700;
-  background: rgba(218, 232, 249, 0.96);
+  background: rgba(224, 236, 251, 0.98);
   border: 1px solid rgba(22, 34, 53, 0.08);
   border-radius: 999px;
 }
@@ -430,7 +424,7 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
 .contact-card {
   padding: 18px;
   margin-top: 24px;
-  background: rgba(244, 249, 255, 0.74);
+  background: rgba(245, 250, 255, 0.78);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
 }
@@ -455,7 +449,7 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
   display: grid;
   gap: 16px;
   padding: 24px;
-  background: rgba(244, 249, 255, 0.76);
+  background: rgba(245, 250, 255, 0.8);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
 }
