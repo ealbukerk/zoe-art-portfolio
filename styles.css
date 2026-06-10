@@ -1,13 +1,13 @@
 :root {
-  --bg: #f7efe5;
-  --surface: rgba(255, 250, 244, 0.82);
-  --surface-strong: #fffaf4;
-  --ink: #1d1a17;
-  --muted: #6f655b;
-  --accent: #b7542c;
-  --accent-deep: #8b3d21;
-  --line: rgba(29, 26, 23, 0.12);
-  --shadow: 0 24px 60px rgba(79, 52, 34, 0.12);
+  --bg: #e8eff8;
+  --surface: rgba(244, 248, 255, 0.84);
+  --surface-strong: #f8fbff;
+  --ink: #162235;
+  --muted: #586a84;
+  --accent: #2f5f93;
+  --accent-deep: #1e4169;
+  --line: rgba(22, 34, 53, 0.12);
+  --shadow: 0 24px 60px rgba(36, 59, 95, 0.14);
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
@@ -28,9 +28,9 @@ body {
   color: var(--ink);
   font-family: "Manrope", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(234, 164, 93, 0.28), transparent 28%),
-    radial-gradient(circle at top right, rgba(166, 89, 58, 0.18), transparent 24%),
-    linear-gradient(180deg, #f5ede2 0%, #f9f4ec 46%, #f2e8db 100%);
+    radial-gradient(circle at top left, rgba(120, 154, 202, 0.28), transparent 28%),
+    radial-gradient(circle at top right, rgba(55, 93, 143, 0.18), transparent 24%),
+    linear-gradient(180deg, #e5edf7 0%, #f2f7fd 46%, #dbe5f2 100%);
 }
 
 body::before {
@@ -39,8 +39,8 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(29, 26, 23, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(29, 26, 23, 0.02) 1px, transparent 1px);
+    linear-gradient(rgba(22, 34, 53, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22, 34, 53, 0.02) 1px, transparent 1px);
   background-size: 28px 28px;
   mask-image: radial-gradient(circle at center, black, transparent 90%);
 }
@@ -60,7 +60,7 @@ body::before {
   gap: 18px;
   padding: 18px 22px;
   margin-bottom: 20px;
-  background: rgba(255, 250, 244, 0.8);
+  background: rgba(248, 251, 255, 0.84);
   backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 999px;
@@ -118,7 +118,7 @@ body[data-page="about"] .site-nav a[href="about.html"],
 body[data-page="contact"] .site-nav a[href="contact.html"] {
   color: var(--surface-strong);
   background: var(--accent);
-  box-shadow: 0 14px 30px rgba(183, 84, 44, 0.24);
+  box-shadow: 0 14px 30px rgba(47, 95, 147, 0.24);
 }
 
 .hero,
@@ -200,12 +200,12 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
   border: 1px solid transparent;
   border-radius: 999px;
   cursor: pointer;
-  box-shadow: 0 14px 30px rgba(139, 61, 33, 0.2);
+  box-shadow: 0 14px 30px rgba(30, 65, 105, 0.22);
 }
 
 .button-secondary {
   color: var(--ink);
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.62);
   border-color: var(--line);
   box-shadow: none;
 }
@@ -214,7 +214,7 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
 .site-nav a:focus-visible,
 .art-link:focus-visible,
 .contact-card a:focus-visible {
-  outline: 2px solid rgba(183, 84, 44, 0.5);
+  outline: 2px solid rgba(47, 95, 147, 0.45);
   outline-offset: 3px;
 }
 
@@ -316,14 +316,14 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
 .art-card {
   height: 100%;
   padding: 16px;
-  background: rgba(255, 255, 255, 0.56);
+  background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
 }
 
 .art-card:hover {
-  background: rgba(255, 255, 255, 0.84);
-  box-shadow: 0 16px 30px rgba(104, 70, 43, 0.1);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 16px 30px rgba(40, 68, 110, 0.12);
 }
 
 .art-card h4 {
@@ -347,8 +347,8 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
   padding: 7px 11px;
   font-size: 0.82rem;
   font-weight: 700;
-  background: rgba(245, 237, 226, 0.95);
-  border: 1px solid rgba(29, 26, 23, 0.08);
+  background: rgba(228, 236, 248, 0.96);
+  border: 1px solid rgba(22, 34, 53, 0.08);
   border-radius: 999px;
 }
 
@@ -358,21 +358,21 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
   place-items: center;
   min-height: 220px;
   overflow: hidden;
-  color: rgba(29, 26, 23, 0.65);
+  color: rgba(22, 34, 53, 0.68);
   font-weight: 800;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   background:
-    linear-gradient(135deg, rgba(183, 84, 44, 0.14), rgba(224, 173, 111, 0.24)),
+    linear-gradient(135deg, rgba(47, 95, 147, 0.16), rgba(155, 186, 220, 0.28)),
     repeating-linear-gradient(
       -45deg,
-      rgba(255, 255, 255, 0.34) 0,
-      rgba(255, 255, 255, 0.34) 12px,
+      rgba(255, 255, 255, 0.36) 0,
+      rgba(255, 255, 255, 0.36) 12px,
       rgba(255, 255, 255, 0.18) 12px,
       rgba(255, 255, 255, 0.18) 24px
     );
-  border: 1px dashed rgba(29, 26, 23, 0.16);
+  border: 1px dashed rgba(22, 34, 53, 0.16);
   border-radius: var(--radius-md);
 }
 
@@ -429,7 +429,7 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
 .contact-card {
   padding: 18px;
   margin-top: 24px;
-  background: rgba(255, 255, 255, 0.56);
+  background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
 }
@@ -454,7 +454,7 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
   display: grid;
   gap: 16px;
   padding: 24px;
-  background: rgba(255, 255, 255, 0.56);
+  background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
 }
@@ -472,14 +472,14 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
   padding: 14px 15px;
   color: var(--ink);
   font: inherit;
-  background: rgba(255, 250, 244, 0.95);
-  border: 1px solid rgba(29, 26, 23, 0.14);
+  background: rgba(248, 251, 255, 0.96);
+  border: 1px solid rgba(22, 34, 53, 0.14);
   border-radius: var(--radius-sm);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid rgba(183, 84, 44, 0.18);
+  outline: 2px solid rgba(47, 95, 147, 0.18);
   border-color: var(--accent);
 }
 
