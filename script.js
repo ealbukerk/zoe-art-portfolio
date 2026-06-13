@@ -1,183 +1,346 @@
 const artworkData = [
   {
-    id: "ember-harbor",
+    id: "looming-meal",
     genre: "Painting",
-    title: "Ember Harbor",
+    title: "Looming Meal",
     medium: "Acrylic on canvas",
-    year: "2025",
-    dimensions: "90 x 120 cm",
+    year: "2023",
     featured: true,
-    summary:
-      "A warm coastal painting built with layered orange, rust, and smoke-blue tones to capture the last light before evening.",
-    description:
-      "Ember Harbor explores the feeling of a shoreline shifting from movement into stillness. Zoe built the surface in transparent acrylic layers so earlier marks remain visible underneath the final glow, creating a sense of memory sitting just below the present moment. The composition balances broad atmospheric fields with smaller passages of detail that suggest distant boats, structures, and reflections.",
-    supportingImages: ["Texture Study", "Detail Crop", "Studio View"],
+    image: "assets/artworks/paintings/looming-meal-2023-acrylic-on-canvas.jpeg",
+    note: "Marked as featured in the source archive folder.",
   },
   {
-    id: "quiet-bloom",
+    id: "blue-and-orange",
     genre: "Painting",
-    title: "Quiet Bloom",
-    medium: "Oil and cold wax",
-    year: "2024",
-    dimensions: "76 x 101 cm",
-    featured: true,
-    summary:
-      "A floral-inspired abstract painting where soft pinks and earth tones open gradually across a textured surface.",
-    description:
-      "Quiet Bloom began as a study in restraint, using a reduced palette and repeated scraping to let the painting unfold slowly. The work brings together softness and structure, with clustered gestures that suggest petals, shadows, and folded fabric without resolving into a fixed image. Zoe was interested in how atmosphere could be carried through surface alone.",
-    supportingImages: ["Edge Detail", "Surface Texture", "Hanging View"],
+    title: "Blue and Orange",
+    medium: "Acrylic on canvasboard",
+    year: "2023",
+    featured: false,
+    image: "assets/artworks/paintings/blue-and-orange-2023-acrylic-on-canvasboard.png",
   },
   {
-    id: "stone-window",
+    id: "cannibalism-still-life",
     genre: "Painting",
-    title: "Stone Window",
-    medium: "Mixed media on board",
-    year: "2023",
-    dimensions: "60 x 80 cm",
+    title: "Cannibalism Still Life (unfinished)",
+    medium: "Oil on canvas",
+    year: "2026",
     featured: false,
-    summary:
-      "Muted grays and pale ochres shape a painting about still architecture and interior light.",
-    description:
-      "Stone Window focuses on quiet geometry and the emotional weight of interior space. Zoe combined paint, graphite, and matte medium to create a layered surface that feels architectural but still handmade. The piece reflects an interest in how enclosed spaces can hold calm, pause, and reflection.",
-    supportingImages: ["Frame Mockup", "Corner Detail", "Underpainting"],
+    image:
+      "assets/artworks/paintings/cannibalism-still-life-unfinished-2026-oil-on-canvas.jpeg",
   },
   {
-    id: "threaded-light",
-    genre: "Drawing",
-    title: "Threaded Light",
-    medium: "Graphite and charcoal",
-    year: "2025",
-    dimensions: "50 x 70 cm",
-    featured: true,
-    summary:
-      "A tonal drawing of intertwined forms that uses sharp highlights to pull light through the page.",
-    description:
-      "Threaded Light studies tension and softness at the same time. Zoe used compressed charcoal for the deepest passages, then lifted areas back with erasers to carve out brightness and direction. The final result feels both woven and fragile, as if the image is being held together by the smallest luminous threads.",
-    supportingImages: ["Process Layer", "Close Marking", "Mounted View"],
-  },
-  {
-    id: "hands-at-rest",
-    genre: "Drawing",
-    title: "Hands at Rest",
-    medium: "Pencil on paper",
-    year: "2024",
-    dimensions: "42 x 59 cm",
-    featured: true,
-    summary:
-      "A close observational study of folded hands, focused on gesture, patience, and anatomical rhythm.",
-    description:
-      "Hands at Rest is built from slow observation and repeated line adjustments. Rather than chasing photographic finish, Zoe kept some construction lines visible so the drawing retains a sense of process and decision-making. The piece reflects her interest in how subtle gestures can communicate presence without needing a dramatic setting.",
-    supportingImages: ["Line Detail", "Sketchbook Page", "Framed Mockup"],
-  },
-  {
-    id: "midnight-study",
-    genre: "Drawing",
-    title: "Midnight Study",
-    medium: "Ink wash and graphite",
-    year: "2023",
-    dimensions: "30 x 42 cm",
+    id: "color-still-life",
+    genre: "Painting",
+    title: "Color Still Life",
+    medium: "Oil on canvas",
+    year: "2026",
     featured: false,
-    summary:
-      "A moody tonal study shaped by dark washes, erased highlights, and atmospheric transitions.",
-    description:
-      "Midnight Study began as an exercise in value range and gradually turned into a small atmospheric work. Zoe layered diluted ink to establish depth, then returned with graphite to sharpen edges and pull forms forward. The contrast between fluid wash and controlled line is central to the piece.",
-    supportingImages: ["Ink Layer", "Paper Texture", "Desk View"],
+    image: "assets/artworks/paintings/color-still-life-2026-oil-on-canvas.jpeg",
   },
   {
-    id: "runway-echo",
+    id: "gentleman-pirate",
+    genre: "Painting",
+    title: "Gentleman Pirate",
+    medium: "Oil on canvas",
+    year: "2022",
+    featured: false,
+    image: "assets/artworks/paintings/gentleman-pirate-2022-oil-on-canvas.jpg",
+  },
+  {
+    id: "girls-best-friend",
+    genre: "Painting",
+    title: "Girl's Best Friend",
+    medium: "Oil on canvas",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/paintings/girls-best-friend-2026-oil-on-canvas.jpeg",
+  },
+  {
+    id: "graffiti-beach",
+    genre: "Painting",
+    title: "Graffiti Beach",
+    medium: "Acrylic on canvas",
+    year: "2021",
+    featured: false,
+    image: "assets/artworks/paintings/graffiti-beach-2021-acrylic-on-canvas.jpg",
+  },
+  {
+    id: "impossible-paths",
+    genre: "Painting",
+    title: "Impossible Paths",
+    medium: "Acrylic on canvas",
+    year: "2023",
+    featured: false,
+    image: "assets/artworks/paintings/impossible-paths-2023-acrylic-on-canvas.jpg",
+  },
+  {
+    id: "keaton-mural",
+    genre: "Painting",
+    title: "Keaton Mural",
+    medium: "Acrylic house paint on plywood",
+    year: "2023",
+    featured: false,
+    image:
+      "assets/artworks/paintings/keaton-mural-2023-acrylic-house-paint-on-plywood.png",
+  },
+  {
+    id: "mastercopy-self-portrait",
+    genre: "Painting",
+    title: 'Mastercopy "Self-Portrait" William Orpen (unfinished)',
+    medium: "Oil on canvas",
+    year: "2026",
+    featured: false,
+    image:
+      "assets/artworks/paintings/mastercopy-self-portrait-william-orpen-unfinished-2026-oil-on-canvas.jpeg",
+  },
+  {
+    id: "albukerk-painting-6",
+    genre: "Painting",
+    title: "Albukerk Painting 6",
+    medium: "Medium not listed in source file",
+    year: "Undated",
+    featured: false,
+    image: "assets/artworks/paintings/albukerk-painting-6.jpg",
+  },
+  {
+    id: "impasto-self-portrait",
+    genre: "Painting",
+    title: "Impasto Self Portrait",
+    medium: "Medium not listed in source file",
+    year: "Undated",
+    featured: false,
+    image: "assets/artworks/paintings/impasto-self-portrait.jpg",
+  },
+  {
+    id: "isabel-collage",
+    genre: "Painting",
+    title: "Isabel Collage",
+    medium: "Collage",
+    year: "Undated",
+    featured: false,
+    image: "assets/artworks/paintings/isabel-collage.jpg",
+  },
+  {
+    id: "fashion-outfit",
     genre: "Fashion",
-    title: "Runway Echo",
-    medium: "Fashion illustration and textile notes",
+    title: "Fashion Outfit",
+    medium: "Cotton, denim",
     year: "2025",
-    dimensions: "A3 presentation board",
     featured: true,
-    summary:
-      "A fashion concept pairing elongated silhouette drawing with notes on drape, structure, and movement.",
-    description:
-      "Runway Echo presents a garment concept inspired by architecture and motion. Zoe combined a stylized fashion figure with fabric annotations and tonal accents to show how the design would shift while worn. The piece functions as both illustration and design communication, balancing mood with clarity.",
-    supportingImages: ["Fabric Detail", "Back View", "Color Story"],
+    image: "assets/artworks/fashion/fashion-outfit-front-2025-cotton-denim.png",
+    supportingImages: [
+      {
+        src: "assets/artworks/fashion/fashion-outfit-back-2025-cotton-denim.png",
+        alt: "Fashion Outfit back view",
+      },
+      {
+        src: "assets/artworks/fashion/fashion-outfit-side-2025-cotton-denim.png",
+        alt: "Fashion Outfit side view",
+      },
+      {
+        src: "assets/artworks/fashion/fashion-final-outfit-large.jpeg",
+        alt: "Fashion Outfit full view",
+      },
+      {
+        src: "assets/artworks/fashion/washu-15018.jpg",
+        alt: "Fashion Outfit documentation image 1",
+      },
+      {
+        src: "assets/artworks/fashion/washu-15032.jpg",
+        alt: "Fashion Outfit documentation image 2",
+      },
+      {
+        src: "assets/artworks/fashion/washu-15038.jpg",
+        alt: "Fashion Outfit documentation image 3",
+      },
+    ],
+    note: "The source folder included front, back, side, and documentation views for this garment.",
   },
   {
-    id: "soft-armor",
+    id: "flower-language-nails",
     genre: "Fashion",
-    title: "Soft Armor",
-    medium: "Marker, pencil, and collage",
+    title: "Anatomy: SF: Flower Language Nails",
+    medium: "Acrylic, micron pen, glitter, nail polish",
     year: "2024",
-    dimensions: "A3 presentation board",
-    featured: true,
-    summary:
-      "A layered fashion board exploring protective shapes through softened tailoring and textured surfaces.",
-    description:
-      "Soft Armor investigates contrast by placing structured outer forms against fluid inner lines. Zoe used collage fragments and marker rendering to push the feeling of materiality, while keeping the central figure airy and expressive. The project imagines clothing as something both protective and deeply personal.",
-    supportingImages: ["Material Swatches", "Silhouette Sheet", "Detail Rendering"],
-  },
-  {
-    id: "city-pleat",
-    genre: "Fashion",
-    title: "City Pleat",
-    medium: "Garment concept sketch",
-    year: "2023",
-    dimensions: "A4 design sheet",
     featured: false,
-    summary:
-      "An urban-inspired fashion study using repeated folds and narrow line work to suggest movement.",
-    description:
-      "City Pleat was developed through repeated line studies that focused on rhythm and repeated structure. Zoe was interested in how a pleated garment could echo vertical city forms while still moving fluidly with the body. The final board includes notes that connect silhouette, textile choice, and wearability.",
-    supportingImages: ["Construction Notes", "Pleat Detail", "Palette Test"],
+    image: "assets/artworks/fashion/anatomy-sf-flower-language-nails-2024.jpeg",
   },
   {
-    id: "pressed-memory",
+    id: "print-studio",
     genre: "Printmaking",
-    title: "Pressed Memory",
-    medium: "Linocut print",
+    title: "Print Studio",
+    medium: "Monotype",
     year: "2025",
-    dimensions: "40 x 50 cm",
     featured: true,
-    summary:
-      "A bold linocut combining floral fragments and geometric blocks into a print about memory and repetition.",
-    description:
-      "Pressed Memory uses the directness of linocut to build a composition that feels both graphic and emotional. Zoe leaned into the carved edge and the irregular pressure of hand printing so each area feels alive rather than mechanical. The repeated motifs suggest the way remembered images return in fragments rather than as a complete picture.",
-    supportingImages: ["Block Carving", "Ink Rollout", "Edition Layout"],
+    image: "assets/artworks/prints/print-studio-2025-monotype.jpeg",
+    supportingImages: [
+      {
+        src: "assets/artworks/prints/print-studio-both-directions-2025-monotype.jpeg",
+        alt: "Print Studio alternate direction",
+      },
+    ],
+    note: "Marked as featured in the source archive folder.",
   },
   {
-    id: "ink-garden",
+    id: "cafeteria-12am",
     genre: "Printmaking",
-    title: "Ink Garden",
-    medium: "Monoprint with chine-colle",
-    year: "2024",
-    dimensions: "38 x 56 cm",
-    featured: true,
-    summary:
-      "A layered monoprint where plant-like forms move through translucent papers and dark ink fields.",
-    description:
-      "Ink Garden is one of Zoe's more process-driven print works, built through successive pulls and paper layering. The composition allows chance textures to stay visible, which gives the piece its sense of growth and movement. Small paper additions create shifts in edge, opacity, and tactile depth.",
-    supportingImages: ["Layer Detail", "Press Setup", "Paper Sample"],
-  },
-  {
-    id: "signal-repeat",
-    genre: "Printmaking",
-    title: "Signal Repeat",
-    medium: "Screen print",
-    year: "2023",
-    dimensions: "50 x 70 cm",
+    title: "Cafeteria 12am",
+    medium: "Monotype",
+    year: "2026",
     featured: false,
-    summary:
-      "A screen print built from repeated symbols and offset color layers that create vibration across the page.",
-    description:
-      "Signal Repeat focuses on rhythm, registration, and controlled variation. Zoe used small alignment shifts intentionally so the stacked color layers create energy instead of perfect flatness. The print connects graphic design thinking with studio experimentation, using repetition as both structure and subject.",
-    supportingImages: ["Layer Separation", "Registration Test", "Wall View"],
+    image: "assets/artworks/prints/cafeteria-12am-2026-monotype.jpeg",
+  },
+  {
+    id: "dreidel",
+    genre: "Printmaking",
+    title: "Dreidel",
+    medium: "Monotype",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/prints/dreidel-2026-monotype.jpeg",
+  },
+  {
+    id: "eli-1",
+    genre: "Printmaking",
+    title: "Eli 1",
+    medium: "Sintra carving",
+    year: "2025",
+    featured: false,
+    image: "assets/artworks/prints/eli-1-2025-sintra-carving.jpeg",
+  },
+  {
+    id: "eli-2",
+    genre: "Printmaking",
+    title: "Eli 2",
+    medium: "Sintra carving",
+    year: "2025",
+    featured: false,
+    image: "assets/artworks/prints/eli-2-2025-sintra-carving.jpeg",
+  },
+  {
+    id: "eli-3",
+    genre: "Printmaking",
+    title: "Eli 3",
+    medium: "Sintra carving",
+    year: "2025",
+    featured: false,
+    image: "assets/artworks/prints/eli-3-2025-sintra-carving.jpeg",
+  },
+  {
+    id: "incarcerated-pregnanacy-zine",
+    genre: "Printmaking",
+    title: "Incarcerated Pregnanacy Zine",
+    medium: "Procreate",
+    year: "2025",
+    featured: false,
+    image:
+      "assets/artworks/prints/incarcerated-pregnanacy-zine-2025-procreate.png",
+  },
+  {
+    id: "journey-to-hades",
+    genre: "Printmaking",
+    title: "Journey to Hades",
+    medium: "Monotype, sintra carving",
+    year: "2026",
+    featured: false,
+    image:
+      "assets/artworks/prints/journey-to-hades-2026-monotype-sintra-carving.jpeg",
+    supportingImages: [
+      {
+        src: "assets/artworks/prints/journey-to-hades-pg-1-2026-monotype-sintra-carving.jpeg",
+        alt: "Journey to Hades page 1",
+      },
+      {
+        src: "assets/artworks/prints/journey-to-hades-pg-2-2026-monotype-sintra-carving.jpeg",
+        alt: "Journey to Hades page 2",
+      },
+      {
+        src: "assets/artworks/prints/journey-to-hades-ghost-2026-monotype-ghost.jpeg",
+        alt: "Journey to Hades ghost print",
+      },
+    ],
+    note: "The source folder included the main work, two page views, and a ghost print variant.",
+  },
+  {
+    id: "luminescence-monotypes",
+    genre: "Printmaking",
+    title: "Luminescence Monotypes",
+    medium: "Monotype",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/prints/luminescence-monotypes-2026-monotype.jpeg",
+  },
+  {
+    id: "movement",
+    genre: "Printmaking",
+    title: "Movement",
+    medium: "Monotype",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/prints/movement-2026-monotype.jpeg",
+  },
+  {
+    id: "smores",
+    genre: "Printmaking",
+    title: "S'mores",
+    medium: "Monotype",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/prints/smores-2026-monotype.jpeg",
+  },
+  {
+    id: "studio-chaos-progression",
+    genre: "Printmaking",
+    title: "Studio Chaos Progression",
+    medium: "Etching",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/prints/studio-chaos-progression-2026-etching.jpeg",
+  },
+  {
+    id: "watching-edition-1",
+    genre: "Printmaking",
+    title: "Watching edition 1",
+    medium: "Etching",
+    year: "2025",
+    featured: false,
+    image: "assets/artworks/prints/watching-edition-1-2025-etching.jpeg",
+    supportingImages: [
+      {
+        src: "assets/artworks/prints/watching-edition-2-2025-etching.jpeg",
+        alt: "Watching edition 2",
+      },
+    ],
+  },
+  {
+    id: "zoe-albukerk-monotype-02",
+    genre: "Printmaking",
+    title: "Zoe Albukerk Monotype 02",
+    medium: "Monotype",
+    year: "Undated",
+    featured: false,
+    image: "assets/artworks/prints/zoe-albukerk-monotype-02.jpeg",
+  },
+  {
+    id: "zoe-albukerk-relief-04",
+    genre: "Printmaking",
+    title: "Zoe Albukerk Relief 04",
+    medium: "Relief print",
+    year: "Undated",
+    featured: false,
+    image: "assets/artworks/prints/zoe-albukerk-relief-04.jpeg",
   },
 ];
 
 const genreDescriptions = {
   Painting:
-    "Paintings that explore mood, surface, and atmosphere through layered color and tactile mark-making.",
+    "Paintings pulled directly from Zoe's source archive, including acrylic, oil, mural work, and collage.",
   Drawing:
-    "Drawings centered on observation, tonal structure, and the expressive potential of line.",
+    "No drawing files were present in the source folder, so this section is waiting on uploads.",
   Fashion:
-    "Fashion development pieces that connect silhouette, fabric ideas, and storytelling through design.",
+    "Fashion work from the archive, including garment views and material-based experimental pieces.",
   Printmaking:
-    "Prints shaped by repetition, texture, and process, from carved blocks to layered monoprints.",
+    "Prints from the archive spanning monotype, etching, relief, digital zine work, and carving-based processes.",
 };
 
 const genres = ["Painting", "Drawing", "Fashion", "Printmaking"];
@@ -190,23 +353,94 @@ function createPlaceholder(label, variant = "placeholder-landscape") {
   `;
 }
 
-function createArtworkCard(piece) {
+function createImageFrame(src, alt, className = "art-image-frame", eager = false) {
+  const loading = eager ? "eager" : "lazy";
+  return `
+    <div class="${className}">
+      <img src="${src}" alt="${alt}" loading="${loading}" />
+    </div>
+  `;
+}
+
+function buildSummary(piece) {
+  const yearText = piece.year === "Undated" ? "Undated" : piece.year;
+  const featuredText = piece.featured
+    ? "Prioritized for the landing page from the source archive."
+    : "Added directly from the source archive.";
+  return `${yearText} ${piece.medium}. ${featuredText}`;
+}
+
+function buildDescription(piece) {
+  const views = piece.supportingImages?.length
+    ? `This artwork entry includes ${piece.supportingImages.length + 1} uploaded views so the detail page can show the piece from multiple angles or related print states.`
+    : "This artwork entry currently uses the single uploaded image that was available in the source folder.";
+
+  const note = piece.note
+    ? ` ${piece.note}`
+    : " The title, medium, and year were taken from the source filename where that information was available.";
+
+  return `${piece.title} is presented here as part of Zoe's ${piece.genre.toLowerCase()} archive. ${views}${note}`;
+}
+
+function sortPieces(pieces) {
+  return [...pieces].sort((a, b) => {
+    if (a.featured !== b.featured) return a.featured ? -1 : 1;
+    if (a.year !== b.year) return String(b.year).localeCompare(String(a.year));
+    return a.title.localeCompare(b.title);
+  });
+}
+
+function getHomepagePieces(genre) {
+  const pieces = sortPieces(artworkData.filter((piece) => piece.genre === genre));
+  const featured = pieces.filter((piece) => piece.featured);
+  const fallbacks = pieces.filter((piece) => !piece.featured);
+  return [...featured, ...fallbacks].slice(0, 2);
+}
+
+function createArtworkCard(piece, eager = false) {
   return `
     <a class="art-link" href="artwork.html?id=${piece.id}">
       <article class="art-card">
-        ${createPlaceholder(`${piece.title} Placeholder`, "placeholder-landscape")}
+        ${createImageFrame(piece.image, `${piece.title} by Zoe`, "art-image-frame", eager)}
         <h4>${piece.title}</h4>
-        <p>${piece.summary}</p>
+        <p>${buildSummary(piece)}</p>
         <div class="art-meta">
           <span class="meta-chip">${piece.genre}</span>
           <span class="meta-chip">${piece.medium}</span>
+          <span class="meta-chip">${piece.year}</span>
         </div>
       </article>
     </a>
   `;
 }
 
-function renderGenreSection(title, description, pieces, gridClass = "") {
+function renderEmptyGenreSection(title, description, message) {
+  return `
+    <section class="genre-section">
+      <div class="genre-header">
+        <div>
+          <p class="eyebrow">Genre</p>
+          <h3>${title}</h3>
+        </div>
+        <p class="genre-intro">${description}</p>
+      </div>
+      <div class="empty-genre-note">
+        ${createPlaceholder(`${title} Uploads Pending`, "placeholder-landscape")}
+        <p>${message}</p>
+      </div>
+    </section>
+  `;
+}
+
+function renderGenreSection(title, description, pieces, gridClass = "", eager = false) {
+  if (!pieces.length) {
+    return renderEmptyGenreSection(
+      title,
+      description,
+      `${title} files were not present in the source folder yet, so this section is waiting for image uploads.`
+    );
+  }
+
   return `
     <section class="genre-section">
       <div class="genre-header">
@@ -217,7 +451,7 @@ function renderGenreSection(title, description, pieces, gridClass = "") {
         <p class="genre-intro">${description}</p>
       </div>
       <div class="art-grid ${gridClass}">
-        ${pieces.map(createArtworkCard).join("")}
+        ${pieces.map((piece, index) => createArtworkCard(piece, eager && index < 2)).join("")}
       </div>
     </section>
   `;
@@ -228,12 +462,9 @@ function renderHomePage() {
   if (!container) return;
 
   container.innerHTML = genres
-    .map((genre) => {
-      const pieces = artworkData
-        .filter((piece) => piece.genre === genre && piece.featured)
-        .slice(0, 2);
-      return renderGenreSection(genre, genreDescriptions[genre], pieces);
-    })
+    .map((genre) =>
+      renderGenreSection(genre, genreDescriptions[genre], getHomepagePieces(genre), "", true)
+    )
     .join("");
 }
 
@@ -243,7 +474,7 @@ function renderPortfolioPage() {
 
   container.innerHTML = genres
     .map((genre) => {
-      const pieces = artworkData.filter((piece) => piece.genre === genre);
+      const pieces = sortPieces(artworkData.filter((piece) => piece.genre === genre));
       return renderGenreSection(
         genre,
         genreDescriptions[genre],
@@ -280,26 +511,34 @@ function renderArtworkDetailPage() {
 
   document.title = `Zoe's Art Portfolio | ${piece.title}`;
 
+  const supportingMarkup = piece.supportingImages?.length
+    ? `
+      <div class="artwork-thumbs">
+        ${piece.supportingImages
+          .map((image) =>
+            createImageFrame(image.src, image.alt, "art-image-frame art-thumb-frame")
+          )
+          .join("")}
+      </div>
+    `
+    : "";
+
   container.innerHTML = `
     <section class="artwork-layout">
       <div class="artwork-gallery">
         <div class="artwork-main-image">
-          ${createPlaceholder(`${piece.title} Large Image`, "placeholder-landscape")}
+          ${createImageFrame(piece.image, `${piece.title} by Zoe`, "art-image-frame artwork-main-frame", true)}
         </div>
-        <div class="artwork-thumbs">
-          ${piece.supportingImages
-            .map((label) => createPlaceholder(label, "placeholder-square"))
-            .join("")}
-        </div>
+        ${supportingMarkup}
       </div>
       <div class="artwork-copy">
         <p class="eyebrow">${piece.genre}</p>
         <h1>${piece.title}</h1>
-        <p>${piece.description}</p>
+        <p>${buildDescription(piece)}</p>
         <div class="art-meta">
           <span class="meta-chip">${piece.medium}</span>
           <span class="meta-chip">${piece.year}</span>
-          <span class="meta-chip">${piece.dimensions}</span>
+          ${piece.featured ? '<span class="meta-chip">Featured on home</span>' : ""}
         </div>
         <a class="button" href="portfolio.html">Back to Portfolio</a>
       </div>

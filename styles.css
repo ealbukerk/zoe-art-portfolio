@@ -218,6 +218,29 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
   align-items: stretch;
 }
 
+.art-image-frame {
+  overflow: hidden;
+  background: rgba(224, 236, 251, 0.72);
+  border: 1px solid rgba(22, 34, 53, 0.08);
+  border-radius: var(--radius-md);
+}
+
+.art-image-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.art-card .art-image-frame {
+  aspect-ratio: 4 / 3;
+}
+
+.hero-image-frame {
+  min-height: 100%;
+  aspect-ratio: 4 / 5;
+}
+
 .page-hero,
 .content-section,
 .about-layout,
@@ -345,6 +368,17 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
   background: rgba(224, 236, 251, 0.98);
   border: 1px solid rgba(22, 34, 53, 0.08);
   border-radius: 999px;
+}
+
+.empty-genre-note {
+  display: grid;
+  gap: 14px;
+}
+
+.empty-genre-note p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .placeholder {
@@ -493,10 +527,18 @@ body[data-page="contact"] .site-nav a[href="contact.html"] {
   margin-bottom: 16px;
 }
 
+.artwork-main-frame {
+  aspect-ratio: 4 / 3;
+}
+
 .artwork-thumbs {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
+}
+
+.art-thumb-frame {
+  aspect-ratio: 1 / 1;
 }
 
 .artwork-copy .eyebrow {
