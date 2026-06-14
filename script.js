@@ -1,124 +1,108 @@
 const artworkData = [
   {
-    id: "looming-meal",
+    id: "the-looming-meal",
     genre: "Painting",
-    title: "Looming Meal",
-    medium: "Acrylic on canvas",
+    title: "The Looming Meal",
+    medium: "Acrylic paint",
     year: "2023",
+    dimensions: '36 x 48 inches',
+    course: "Draw/Paint 300 (high school)",
     featured: true,
     image: "assets/artworks/paintings/looming-meal-2023-acrylic-on-canvas.jpeg",
-    note: "Marked as featured in the source archive folder.",
+    summary:
+      "A multiple self portrait from below, meant to make the viewer feel like the food being eaten at a meal.",
+    description:
+      "This multiple self portrait is viewed from below and was made to place the viewer in the position of the meal itself. The perspective pushes the composition into something theatrical and slightly uncomfortable, turning the act of eating into the central emotional experience.",
   },
   {
-    id: "blue-and-orange",
+    id: "orange-and-blue-perplexed",
     genre: "Painting",
-    title: "Blue and Orange",
-    medium: "Acrylic on canvasboard",
+    title: "Orange and Blue Perplexed",
+    medium: "Acrylic paint",
     year: "2023",
+    dimensions: "20 x 16 inches",
     featured: false,
     image: "assets/artworks/paintings/blue-and-orange-2023-acrylic-on-canvasboard.png",
+    summary:
+      "A self portrait from a mirror that explores unnatural color through bright orange hair and blue-toned skin.",
+    description:
+      "This self portrait was painted from a mirror while exploring unnatural color relationships. The exaggerated orange and blue palette shifts the image away from realism and into a more emotional, perplexed state.",
   },
   {
-    id: "cannibalism-still-life",
+    id: "garden-puzzle",
     genre: "Painting",
-    title: "Cannibalism Still Life (unfinished)",
-    medium: "Oil on canvas",
-    year: "2026",
+    title: "Garden Puzzle",
+    medium: "Acrylic paint, collage (magazine/variety paper), colored pencil",
+    year: "Undated",
+    dimensions: "22 x 16 inches",
     featured: false,
-    image:
-      "assets/artworks/paintings/cannibalism-still-life-unfinished-2026-oil-on-canvas.jpeg",
-  },
-  {
-    id: "color-still-life",
-    genre: "Painting",
-    title: "Color Still Life",
-    medium: "Oil on canvas",
-    year: "2026",
-    featured: false,
-    image: "assets/artworks/paintings/color-still-life-2026-oil-on-canvas.jpeg",
+    image: "assets/artworks/paintings/isabel-collage.jpg",
+    summary:
+      "A painting of the artist and a friend in a garden, with collaged plants built for richer texture and color.",
+    description:
+      "This painting shows my friend and me in a garden. I collaged the plants with magazine and other paper so the image would have more variety of color and texture, especially because it was made into a puzzle for my friend's birthday.",
   },
   {
     id: "gentleman-pirate",
     genre: "Painting",
     title: "Gentleman Pirate",
-    medium: "Oil on canvas",
+    medium: "Oil paint",
     year: "2022",
+    dimensions: "14 x 11 inches",
+    course: "Draw/Paint 200 (high school)",
     featured: false,
     image: "assets/artworks/paintings/gentleman-pirate-2022-oil-on-canvas.jpg",
+    summary:
+      'A self portrait inserted into Andrey Shishkin\'s "Mercenary With a Sword."',
+    description:
+      'This self portrait places my face into Andrey Shishkin\'s "Mercenary With a Sword." The result lets me play with costume, character, and historical painting language while keeping the piece personal.',
   },
   {
-    id: "girls-best-friend",
+    id: "isabel-of-the-spheres",
     genre: "Painting",
-    title: "Girl's Best Friend",
-    medium: "Oil on canvas",
-    year: "2026",
-    featured: false,
-    image: "assets/artworks/paintings/girls-best-friend-2026-oil-on-canvas.jpeg",
-  },
-  {
-    id: "graffiti-beach",
-    genre: "Painting",
-    title: "Graffiti Beach",
-    medium: "Acrylic on canvas",
-    year: "2021",
-    featured: false,
-    image: "assets/artworks/paintings/graffiti-beach-2021-acrylic-on-canvas.jpg",
-  },
-  {
-    id: "impossible-paths",
-    genre: "Painting",
-    title: "Impossible Paths",
-    medium: "Acrylic on canvas",
-    year: "2023",
-    featured: false,
-    image: "assets/artworks/paintings/impossible-paths-2023-acrylic-on-canvas.jpg",
-  },
-  {
-    id: "keaton-mural",
-    genre: "Painting",
-    title: "Keaton Mural",
-    medium: "Acrylic house paint on plywood",
-    year: "2023",
-    featured: false,
-    image:
-      "assets/artworks/paintings/keaton-mural-2023-acrylic-house-paint-on-plywood.png",
-  },
-  {
-    id: "mastercopy-self-portrait",
-    genre: "Painting",
-    title: 'Mastercopy "Self-Portrait" William Orpen (unfinished)',
-    medium: "Oil on canvas",
-    year: "2026",
-    featured: false,
-    image:
-      "assets/artworks/paintings/mastercopy-self-portrait-william-orpen-unfinished-2026-oil-on-canvas.jpeg",
-  },
-  {
-    id: "albukerk-painting-6",
-    genre: "Painting",
-    title: "Albukerk Painting 6",
-    medium: "Medium not listed in source file",
+    title: "Isabel of the Spheres",
+    medium: "Acrylic paint",
     year: "Undated",
+    dimensions: "36 x 24 inches",
+    course: "Draw/Paint 300 (high school)",
     featured: false,
-    image: "assets/artworks/paintings/albukerk-painting-6.jpg",
+    image: "assets/artworks/paintings/img-0375.jpg",
+    summary:
+      "A portrait of my friend Isabel, presented here with the closest matching archive image currently available.",
+    description:
+      'This entry is being used for "Isabel of the Spheres" based on the archive images currently available locally. It is a portrait of my friend Isabel and is the closest match I could identify from the source folder while keeping the renamed portfolio consistent.',
+    note: "This title was matched to the closest available Isabel portrait in the archive.",
   },
   {
-    id: "impasto-self-portrait",
+    id: "isabel",
     genre: "Painting",
-    title: "Impasto Self Portrait",
-    medium: "Medium not listed in source file",
+    title: "Isabel",
+    medium: "Oil paint, impasto medium",
     year: "Undated",
+    dimensions: "14 x 11 inches",
     featured: false,
     image: "assets/artworks/paintings/impasto-self-portrait.jpg",
+    summary:
+      "A portrait built with palette-knife impasto everywhere except the background.",
+    description:
+      "This portrait of my friend Isabel was built with a palette knife for every area except the background. The thick impasto surface makes the face feel immediate and physical, with color and gesture doing as much work as likeness.",
   },
   {
-    id: "isabel-collage",
-    genre: "Painting",
-    title: "Isabel Collage",
-    medium: "Collage",
-    year: "Undated",
+    id: "cinema-of-the-popcorn-fairies",
+    genre: "Drawing",
+    title: "Cinema of the Popcorn Fairies",
+    medium: "Digital art animation",
+    year: "2024",
+    course: "2-D Design",
     featured: false,
-    image: "assets/artworks/paintings/isabel-collage.jpg",
+    video: "assets/artworks/paintings/popcorn-fairies-submission-version.mp4",
+    externalUrl:
+      "https://drive.google.com/file/d/1jSwCtlhaJw9wtrYaIB-qPalQ4hRu8c9O/view?usp=sharing",
+    summary:
+      "An animation that moves from static to dynamic compositions, inspired by a painting of popcorn fairies erupting from a movie-theater popcorn box.",
+    description:
+      "This digital animation progresses from static to dynamic compositions within the frame. It was inspired by a painting I made of popcorn fairies bursting out of a popcorn box at the movies, and it is included here with both the uploaded video file and an external watch link.",
+    note: "The source archive included the local animation file, and the Google Drive link was provided for viewing.",
   },
   {
     id: "fashion-outfit",
@@ -128,6 +112,10 @@ const artworkData = [
     year: "2025",
     featured: true,
     image: "assets/artworks/fashion/fashion-outfit-front-2025-cotton-denim.png",
+    summary:
+      "A garment entry with front, back, side, and documentation views from the source archive.",
+    description:
+      "This garment entry uses the multi-view fashion documentation found in the source folder. The archive included front, back, side, and additional documentation images, so the detail page shows the full set rather than just a single still.",
     supportingImages: [
       {
         src: "assets/artworks/fashion/fashion-outfit-back-2025-cotton-denim.png",
@@ -154,87 +142,66 @@ const artworkData = [
         alt: "Fashion Outfit documentation image 3",
       },
     ],
-    note: "The source folder included front, back, side, and documentation views for this garment.",
   },
   {
-    id: "flower-language-nails",
+    id: "organs-san-francisco-and-flower-nails",
     genre: "Fashion",
-    title: "Anatomy: SF: Flower Language Nails",
-    medium: "Acrylic, micron pen, glitter, nail polish",
+    title: "Organs, San Francisco, and Flower Nails",
+    medium: "Acrylic paint, micron pen, clear nail polish, glitter, false nails",
     year: "2024",
+    dimensions: "About 0.75 x 0.5 inch (middle column size)",
     featured: false,
     image: "assets/artworks/fashion/anatomy-sf-flower-language-nails-2024.jpeg",
+    summary:
+      "Wearable false nails built in three themes: organs, San Francisco sites, and flowers with Victorian friendship meanings.",
+    description:
+      "This piece includes three themed nail sets: body and organ imagery, San Francisco sites, and flowers carrying meanings about friendship in Victorian flower language. The work was made as a birthday gift for a friend who loves elaborate nails, and yes, they are wearable.",
   },
   {
-    id: "print-studio",
+    id: "the-print-studio",
     genre: "Printmaking",
-    title: "Print Studio",
+    title: "The Print Studio",
     medium: "Monotype",
     year: "2025",
+    dimensions: "About 21 x 30 inches",
+    course: "Intro Printmaking",
     featured: true,
     image: "assets/artworks/prints/print-studio-2025-monotype.jpeg",
+    summary:
+      "A set of monotypes showing the studio space from two opposite perspectives.",
+    description:
+      "This work is a set of monotypes of the print studio seen from two opposite viewpoints. It was made to capture the shapes, directions, and colorfulness of the space rather than treating the room as a neutral backdrop.",
     supportingImages: [
       {
         src: "assets/artworks/prints/print-studio-both-directions-2025-monotype.jpeg",
-        alt: "Print Studio alternate direction",
+        alt: "The Print Studio from the opposite perspective",
       },
     ],
-    note: "Marked as featured in the source archive folder.",
   },
   {
-    id: "cafeteria-12am",
+    id: "eli-print",
     genre: "Printmaking",
-    title: "Cafeteria 12am",
-    medium: "Monotype",
-    year: "2026",
-    featured: false,
-    image: "assets/artworks/prints/cafeteria-12am-2026-monotype.jpeg",
-  },
-  {
-    id: "dreidel",
-    genre: "Printmaking",
-    title: "Dreidel",
-    medium: "Monotype",
-    year: "2026",
-    featured: false,
-    image: "assets/artworks/prints/dreidel-2026-monotype.jpeg",
-  },
-  {
-    id: "eli-1",
-    genre: "Printmaking",
-    title: "Eli 1",
-    medium: "Sintra carving",
+    title: "Eli Print",
+    medium: "Relief print from sintra",
     year: "2025",
+    dimensions: "15.5 x 11 inches",
+    course: "Intro Printmaking",
     featured: false,
     image: "assets/artworks/prints/eli-1-2025-sintra-carving.jpeg",
-  },
-  {
-    id: "eli-2",
-    genre: "Printmaking",
-    title: "Eli 2",
-    medium: "Sintra carving",
-    year: "2025",
-    featured: false,
-    image: "assets/artworks/prints/eli-2-2025-sintra-carving.jpeg",
-  },
-  {
-    id: "eli-3",
-    genre: "Printmaking",
-    title: "Eli 3",
-    medium: "Sintra carving",
-    year: "2025",
-    featured: false,
-    image: "assets/artworks/prints/eli-3-2025-sintra-carving.jpeg",
-  },
-  {
-    id: "incarcerated-pregnanacy-zine",
-    genre: "Printmaking",
-    title: "Incarcerated Pregnanacy Zine",
-    medium: "Procreate",
-    year: "2025",
-    featured: false,
-    image:
-      "assets/artworks/prints/incarcerated-pregnanacy-zine-2025-procreate.png",
+    summary:
+      "A portrait of my brother stylized like a punk music poster to emphasize his mohawk.",
+    description:
+      "This relief print is a portrait of my brother Eli. I stylized it to feel like a punk music poster so the image would push the shape, attitude, and graphic energy of his mohawk.",
+    supportingImages: [
+      {
+        src: "assets/artworks/prints/eli-2-2025-sintra-carving.jpeg",
+        alt: "Eli Print alternate state 1",
+      },
+      {
+        src: "assets/artworks/prints/eli-3-2025-sintra-carving.jpeg",
+        alt: "Eli Print alternate state 2",
+      },
+    ],
   },
   {
     id: "journey-to-hades",
@@ -245,6 +212,10 @@ const artworkData = [
     featured: false,
     image:
       "assets/artworks/prints/journey-to-hades-2026-monotype-sintra-carving.jpeg",
+    summary:
+      "A multi-part print sequence with page views and a ghost print variant from the source archive.",
+    description:
+      "The local archive included the main Journey to Hades print, two page views, and a ghost print variation. They are grouped here so the detail page can show the full sequence together.",
     supportingImages: [
       {
         src: "assets/artworks/prints/journey-to-hades-pg-1-2026-monotype-sintra-carving.jpeg",
@@ -259,43 +230,6 @@ const artworkData = [
         alt: "Journey to Hades ghost print",
       },
     ],
-    note: "The source folder included the main work, two page views, and a ghost print variant.",
-  },
-  {
-    id: "luminescence-monotypes",
-    genre: "Printmaking",
-    title: "Luminescence Monotypes",
-    medium: "Monotype",
-    year: "2026",
-    featured: false,
-    image: "assets/artworks/prints/luminescence-monotypes-2026-monotype.jpeg",
-  },
-  {
-    id: "movement",
-    genre: "Printmaking",
-    title: "Movement",
-    medium: "Monotype",
-    year: "2026",
-    featured: false,
-    image: "assets/artworks/prints/movement-2026-monotype.jpeg",
-  },
-  {
-    id: "smores",
-    genre: "Printmaking",
-    title: "S'mores",
-    medium: "Monotype",
-    year: "2026",
-    featured: false,
-    image: "assets/artworks/prints/smores-2026-monotype.jpeg",
-  },
-  {
-    id: "studio-chaos-progression",
-    genre: "Printmaking",
-    title: "Studio Chaos Progression",
-    medium: "Etching",
-    year: "2026",
-    featured: false,
-    image: "assets/artworks/prints/studio-chaos-progression-2026-etching.jpeg",
   },
   {
     id: "watching-edition-1",
@@ -305,12 +239,86 @@ const artworkData = [
     year: "2025",
     featured: false,
     image: "assets/artworks/prints/watching-edition-1-2025-etching.jpeg",
+    summary: "An etching from the archive paired with its second edition state.",
+    description:
+      "This etching is shown together with a second edition image from the archive so the detail page can hold both related states in one place.",
     supportingImages: [
       {
         src: "assets/artworks/prints/watching-edition-2-2025-etching.jpeg",
         alt: "Watching edition 2",
       },
     ],
+  },
+  {
+    id: "cafeteria-12am",
+    genre: "Printmaking",
+    title: "Cafeteria 12am",
+    medium: "Monotype",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/prints/cafeteria-12am-2026-monotype.jpeg",
+    summary: "A monotype carried over directly from the archive.",
+  },
+  {
+    id: "dreidel",
+    genre: "Printmaking",
+    title: "Dreidel",
+    medium: "Monotype",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/prints/dreidel-2026-monotype.jpeg",
+    summary: "A monotype carried over directly from the archive.",
+  },
+  {
+    id: "incarcerated-pregnanacy-zine",
+    genre: "Printmaking",
+    title: "Incarcerated Pregnanacy Zine",
+    medium: "Procreate",
+    year: "2025",
+    featured: false,
+    image:
+      "assets/artworks/prints/incarcerated-pregnanacy-zine-2025-procreate.png",
+    summary: "A digital zine image carried over directly from the archive.",
+  },
+  {
+    id: "luminescence-monotypes",
+    genre: "Printmaking",
+    title: "Luminescence Monotypes",
+    medium: "Monotype",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/prints/luminescence-monotypes-2026-monotype.jpeg",
+    summary: "A monotype carried over directly from the archive.",
+  },
+  {
+    id: "movement",
+    genre: "Printmaking",
+    title: "Movement",
+    medium: "Monotype",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/prints/movement-2026-monotype.jpeg",
+    summary: "A monotype carried over directly from the archive.",
+  },
+  {
+    id: "smores",
+    genre: "Printmaking",
+    title: "S'mores",
+    medium: "Monotype",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/prints/smores-2026-monotype.jpeg",
+    summary: "A monotype carried over directly from the archive.",
+  },
+  {
+    id: "studio-chaos-progression",
+    genre: "Printmaking",
+    title: "Studio Chaos Progression",
+    medium: "Etching",
+    year: "2026",
+    featured: false,
+    image: "assets/artworks/prints/studio-chaos-progression-2026-etching.jpeg",
+    summary: "An etching carried over directly from the archive.",
   },
   {
     id: "zoe-albukerk-monotype-02",
@@ -320,27 +328,19 @@ const artworkData = [
     year: "Undated",
     featured: false,
     image: "assets/artworks/prints/zoe-albukerk-monotype-02.jpeg",
-  },
-  {
-    id: "zoe-albukerk-relief-04",
-    genre: "Printmaking",
-    title: "Zoe Albukerk Relief 04",
-    medium: "Relief print",
-    year: "Undated",
-    featured: false,
-    image: "assets/artworks/prints/zoe-albukerk-relief-04.jpeg",
+    summary: "A monotype carried over directly from the archive.",
   },
 ];
 
 const genreDescriptions = {
   Painting:
-    "Paintings pulled directly from Zoe's source archive, including acrylic, oil, mural work, and collage.",
+    "Paintings updated with your preferred titles, dimensions, materials, and project descriptions where matches were clear.",
   Drawing:
-    "No drawing files were present in the source folder, so this section is waiting on uploads.",
+    "This section currently holds the digital animation piece because no separate drawing image folder was present in the local archive.",
   Fashion:
-    "Fashion work from the archive, including garment views and material-based experimental pieces.",
+    "Fashion and wearable design work from the archive, including garment views and the full nail series.",
   Printmaking:
-    "Prints from the archive spanning monotype, etching, relief, digital zine work, and carving-based processes.",
+    "Printmaking work from the archive, including the renamed featured pieces and grouped multi-state print sets.",
 };
 
 const genres = ["Painting", "Drawing", "Fashion", "Printmaking"];
@@ -362,24 +362,39 @@ function createImageFrame(src, alt, className = "art-image-frame", eager = false
   `;
 }
 
-function buildSummary(piece) {
-  const yearText = piece.year === "Undated" ? "Undated" : piece.year;
-  const featuredText = piece.featured
-    ? "Prioritized for the landing page from the source archive."
-    : "Added directly from the source archive.";
-  return `${yearText} ${piece.medium}. ${featuredText}`;
+function createVideoFrame(src, className = "art-image-frame", detail = false) {
+  const controls = detail ? "controls" : "";
+  const autoplay = detail ? "" : "muted loop autoplay playsinline";
+  return `
+    <div class="${className}">
+      <video src="${src}" ${controls} ${autoplay} preload="metadata"></video>
+    </div>
+  `;
+}
+
+function createPrimaryMedia(piece, className, eager = false, detail = false) {
+  if (piece.image) {
+    return createImageFrame(piece.image, `${piece.title} by Zoe`, className, eager);
+  }
+  if (piece.video) {
+    return createVideoFrame(piece.video, className, detail);
+  }
+  return createPlaceholder(piece.title, "placeholder-landscape");
+}
+
+function defaultSummary(piece) {
+  const bits = [piece.dimensions, piece.medium, piece.course].filter(Boolean);
+  return bits.join(" | ");
 }
 
 function buildDescription(piece) {
+  if (piece.description) return piece.description;
+
   const views = piece.supportingImages?.length
-    ? `This artwork entry includes ${piece.supportingImages.length + 1} uploaded views so the detail page can show the piece from multiple angles or related print states.`
+    ? `This artwork entry includes ${piece.supportingImages.length + 1} uploaded views so the detail page can show related angles or print states together.`
     : "This artwork entry currently uses the single uploaded image that was available in the source folder.";
 
-  const note = piece.note
-    ? ` ${piece.note}`
-    : " The title, medium, and year were taken from the source filename where that information was available.";
-
-  return `${piece.title} is presented here as part of Zoe's ${piece.genre.toLowerCase()} archive. ${views}${note}`;
+  return `${piece.title} is presented here as part of Zoe's ${piece.genre.toLowerCase()} archive. ${views}`;
 }
 
 function sortPieces(pieces) {
@@ -401,9 +416,9 @@ function createArtworkCard(piece, eager = false) {
   return `
     <a class="art-link" href="artwork.html?id=${piece.id}">
       <article class="art-card">
-        ${createImageFrame(piece.image, `${piece.title} by Zoe`, "art-image-frame", eager)}
+        ${createPrimaryMedia(piece, "art-image-frame", eager, false)}
         <h4>${piece.title}</h4>
-        <p>${buildSummary(piece)}</p>
+        <p>${piece.summary || defaultSummary(piece)}</p>
         <div class="art-meta">
           <span class="meta-chip">${piece.genre}</span>
           <span class="meta-chip">${piece.medium}</span>
@@ -523,11 +538,15 @@ function renderArtworkDetailPage() {
     `
     : "";
 
+  const watchMarkup = piece.externalUrl
+    ? `<a class="button" href="${piece.externalUrl}" target="_blank" rel="noreferrer">Watch Animation</a>`
+    : `<a class="button" href="portfolio.html">Back to Portfolio</a>`;
+
   container.innerHTML = `
     <section class="artwork-layout">
       <div class="artwork-gallery">
         <div class="artwork-main-image">
-          ${createImageFrame(piece.image, `${piece.title} by Zoe`, "art-image-frame artwork-main-frame", true)}
+          ${createPrimaryMedia(piece, "art-image-frame artwork-main-frame", true, true)}
         </div>
         ${supportingMarkup}
       </div>
@@ -538,9 +557,12 @@ function renderArtworkDetailPage() {
         <div class="art-meta">
           <span class="meta-chip">${piece.medium}</span>
           <span class="meta-chip">${piece.year}</span>
+          ${piece.dimensions ? `<span class="meta-chip">${piece.dimensions}</span>` : ""}
+          ${piece.course ? `<span class="meta-chip">${piece.course}</span>` : ""}
           ${piece.featured ? '<span class="meta-chip">Featured on home</span>' : ""}
         </div>
-        <a class="button" href="portfolio.html">Back to Portfolio</a>
+        ${piece.note ? `<p class="artwork-note">${piece.note}</p>` : ""}
+        ${watchMarkup}
       </div>
     </section>
   `;
