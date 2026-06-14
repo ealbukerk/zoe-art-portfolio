@@ -419,11 +419,6 @@ function createArtworkCard(piece, eager = false) {
         ${createPrimaryMedia(piece, "art-image-frame", eager, false)}
         <h4>${piece.title}</h4>
         <p>${piece.summary || defaultSummary(piece)}</p>
-        <div class="art-meta">
-          <span class="meta-chip">${piece.genre}</span>
-          <span class="meta-chip">${piece.medium}</span>
-          <span class="meta-chip">${piece.year}</span>
-        </div>
       </article>
     </a>
   `;
@@ -433,10 +428,7 @@ function renderEmptyGenreSection(title, description, message) {
   return `
     <section class="genre-section">
       <div class="genre-header">
-        <div>
-          <p class="eyebrow">Genre</p>
-          <h3>${title}</h3>
-        </div>
+        <div><h3>${title}</h3></div>
         <p class="genre-intro">${description}</p>
       </div>
       <div class="empty-genre-note">
@@ -459,10 +451,7 @@ function renderGenreSection(title, description, pieces, gridClass = "", eager = 
   return `
     <section class="genre-section">
       <div class="genre-header">
-        <div>
-          <p class="eyebrow">Genre</p>
-          <h3>${title}</h3>
-        </div>
+        <div><h3>${title}</h3></div>
         <p class="genre-intro">${description}</p>
       </div>
       <div class="art-grid ${gridClass}">
@@ -551,16 +540,8 @@ function renderArtworkDetailPage() {
         ${supportingMarkup}
       </div>
       <div class="artwork-copy">
-        <p class="eyebrow">${piece.genre}</p>
         <h1>${piece.title}</h1>
         <p>${buildDescription(piece)}</p>
-        <div class="art-meta">
-          <span class="meta-chip">${piece.medium}</span>
-          <span class="meta-chip">${piece.year}</span>
-          ${piece.dimensions ? `<span class="meta-chip">${piece.dimensions}</span>` : ""}
-          ${piece.course ? `<span class="meta-chip">${piece.course}</span>` : ""}
-          ${piece.featured ? '<span class="meta-chip">Featured on home</span>' : ""}
-        </div>
         ${piece.note ? `<p class="artwork-note">${piece.note}</p>` : ""}
         ${watchMarkup}
       </div>

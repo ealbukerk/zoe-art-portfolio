@@ -1,11 +1,11 @@
 :root {
-  --bg: #9fb5c8;
-  --surface: rgba(240, 246, 252, 0.92);
+  --bg: #a9c4da;
+  --surface: rgba(244, 249, 253, 0.93);
   --surface-strong: #f7fbff;
   --ink: #162235;
-  --muted: #4c657d;
-  --accent: #4b739b;
-  --accent-deep: #355772;
+  --muted: #4f6980;
+  --accent: #5d86ae;
+  --accent-deep: #416789;
   --line: rgba(22, 34, 53, 0.12);
   --shadow: 0 24px 60px rgba(43, 62, 82, 0.18);
   --radius-lg: 28px;
@@ -29,20 +29,9 @@ body {
   font-family: "Manrope", sans-serif;
   background-color: var(--bg);
   background-image:
-    radial-gradient(circle at 14% 16%, rgba(255, 255, 255, 0.26), transparent 25%),
-    radial-gradient(circle at 86% 12%, rgba(98, 128, 159, 0.18), transparent 24%),
-    linear-gradient(180deg, #b8cbda 0%, #a8c0d3 46%, #96aec3 100%);
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.08) 0, transparent 18%),
-    radial-gradient(circle at 72% 68%, rgba(69, 88, 110, 0.05) 0, transparent 22%);
-  opacity: 0.5;
+    radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.22), transparent 24%),
+    radial-gradient(circle at 84% 12%, rgba(126, 159, 193, 0.16), transparent 24%),
+    linear-gradient(180deg, #c0d5e6 0%, #afc8de 44%, #9fb9d2 100%);
 }
 
 .page-shell {
